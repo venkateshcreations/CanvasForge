@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Rounded Rect -->
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="url(#bg)" stroke="#27272a" stroke-width="8"/>
+  <!-- Forge Anvil / Prism Geometry -->
+  <polygon points="128,140 384,140 320,240 192,240" fill="url(#accent)"/>
+  <polygon points="192,240 320,240 256,380" fill="url(#glow)"/>
+  <circle cx="256" cy="240" r="32" fill="#ffffff" opacity="0.9"/>
+  <!-- Accent Sparks -->
+  <circle cx="160" cy="110" r="10" fill="#38bdf8"/>
+  <circle cx="352" cy="110" r="8" fill="#a855f7"/>
+  <circle cx="256" cy="410" r="12" fill="#ec4899"/>
+</svg>
