@@ -1,27 +1,46 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#18181b"/>
-      <stop offset="100%" stop-color="#09090b"/>
+    <linearGradient id="vcc-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141824"/>
+      <stop offset="55%" stop-color="#0d1018"/>
+      <stop offset="100%" stop-color="#080a0f"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="vcc-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#6366f1" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="vcc-v" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#38bdf8"/>
-      <stop offset="50%" stop-color="#6366f1"/>
-      <stop offset="100%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#6366f1"/>
     </linearGradient>
-    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0ea5e9"/>
-      <stop offset="100%" stop-color="#ec4899"/>
+    <linearGradient id="vcc-c" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
     </linearGradient>
+    <radialGradient id="vcc-glow" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.22"/>
+      <stop offset="60%" stop-color="#6366f1" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
   </defs>
-  <!-- Background Rounded Rect -->
-  <rect x="16" y="16" width="480" height="480" rx="96" fill="url(#bg)" stroke="#27272a" stroke-width="8"/>
-  <!-- Forge Anvil / Prism Geometry -->
-  <polygon points="128,140 384,140 320,240 192,240" fill="url(#accent)"/>
-  <polygon points="192,240 320,240 256,380" fill="url(#glow)"/>
-  <circle cx="256" cy="240" r="32" fill="#ffffff" opacity="0.9"/>
-  <!-- Accent Sparks -->
-  <circle cx="160" cy="110" r="10" fill="#38bdf8"/>
-  <circle cx="352" cy="110" r="8" fill="#a855f7"/>
-  <circle cx="256" cy="410" r="12" fill="#ec4899"/>
+
+  <!-- Squircle Studio Base -->
+  <rect x="20" y="20" width="472" height="472" rx="108" fill="url(#vcc-bg)" stroke="url(#vcc-border)" stroke-width="10"/>
+  <rect x="20" y="20" width="472" height="472" rx="108" fill="url(#vcc-glow)"/>
+
+  <!-- Subtle Canvas Grid Accent -->
+  <path d="M96 152 H416 M96 360 H416 M152 96 V416 M360 96 V416" stroke="#ffffff" stroke-opacity="0.04" stroke-width="2"/>
+
+  <!-- Geometric 'V' Vector Stroke -->
+  <path d="M114 162 L198 354 L268 196" fill="none" stroke="url(#vcc-v)" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Geometric 'C' Canvas Arc -->
+  <path d="M390 186 C362 152 308 152 280 186 C252 220 252 292 280 326 C308 360 362 360 390 326" fill="none" stroke="url(#vcc-c)" stroke-width="44" stroke-linecap="round"/>
+
+  <!-- Vector Anchor Nodes -->
+  <circle cx="114" cy="162" r="13" fill="#ffffff" stroke="#38bdf8" stroke-width="6"/>
+  <circle cx="198" cy="354" r="13" fill="#ffffff" stroke="#6366f1" stroke-width="6"/>
+  <circle cx="390" cy="186" r="12" fill="#ffffff" stroke="#818cf8" stroke-width="6"/>
+  <circle cx="390" cy="326" r="12" fill="#ffffff" stroke="#c084fc" stroke-width="6"/>
 </svg>

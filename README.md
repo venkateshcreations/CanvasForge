@@ -1,10 +1,10 @@
-# CanvasForge Studio
+# VC-Canvas Studio
 
 > The modern offline-first vector design suite & prototyping engine with native Model Context Protocol (MCP) integration, built-in AI Design Assistant, dynamic auto layout, 300+ vector icons, and zero cloud subscriptions.
 
 ## 🌐 Live Showcase
 Explore the official marketing webpage:  
-👉 **[https://venkateshcreations.github.io/CanvasForge/](https://venkateshcreations.github.io/CanvasForge/)**
+👉 **[https://venkateshcreations.github.io/VC-Canvas/](https://venkateshcreations.github.io/VC-Canvas/)**
 
 ---
 
